@@ -1,0 +1,43 @@
+server:
+  port: 8443
+
+spring:
+  application:
+    name: backend
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+#  profiles:
+#    active: dev
+#    include: swagger
+#  devtools:
+#    restart:
+#      enabled: true
+#    livereload:
+#      enabled: false
+#  jackson:
+#    serialization.indent_output: true
+#    datasource:
+#      type: com.zaxxer.hikari.HikariDataSource
+#      port: 3036
+#      url: jdbc:mysql://mysql01:3306/wordpressdb
+#      name:
+#      username: wordpressben
+#      password: mysqlbenpassword
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    database: MYSQL
+#    show-sql: true
+#    properties:
+#      hibernate.id.new_generator_mappings: true
+#      hibernate.cache.use_second_level_cache: true
+#      hibernate.cache.use_query_cache: false
+#      hibernate.generate_statistics: true
+#      hibernate.cache.region.factory_class: org.hibernate.cache.jcache.JCacheRegionFactory  # For JCache (optional)
+#      hibernate.cache.use_minimal_puts: true
+
